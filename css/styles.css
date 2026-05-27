@@ -77,6 +77,7 @@ Variables
 --clr-lightgrey-7:hsl(204, 24%, 35%);
 
   --clr-white: #fff;
+  --clr-red:#701727;
   --ff-primary: "Roboto", sans-serif;
   --ff-secondary: "Open Sans", sans-serif;
   --transition: all 0.3s linear;
@@ -103,7 +104,9 @@ body {
   font-family: var(--ff-secondary);
   background: var(--clr-white);
   /* color: var(--clr-crimson-7); */
-  color:#1a1a1a;
+  /* color:#4A4A4A; */
+  /* color:#1A1A1A; */
+ color:#701727;
   line-height: 1.5;
   font-size: 0.875rem;
 }
@@ -142,7 +145,8 @@ h4 {
 }
 p {
   margin-bottom: 1.25rem;
-  color: var(--clr-grey-5);
+ color:#1A1A1A;
+  /* color: var(--clr-grey-5); */
 }
 @media screen and (min-width: 800px) {
   h1 {
@@ -187,7 +191,8 @@ p {
 }
 .btn:hover {
   color: var(--clr-crimson-8);
-  background: var(--clr-lightgrey-1);
+  /* background: var(--clr-lightgrey-1); */
+  background: var(--clr-white);;
 }
 /* section */
 .section {
@@ -277,7 +282,9 @@ Navbar
   background: transparent;
   border-color: transparent;
   display: inline;
-  color: var(--clr-crimson-8);
+  /* color: var(--clr-crimson-8); */
+  color:#1A1A1A;
+
   font-size: 1.5rem;
   cursor: pointer;
   /* justify-content: space-between; */
