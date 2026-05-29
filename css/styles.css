@@ -245,7 +245,6 @@ Navbar
   display: grid;
   align-items: center;
  transition: var(--transition);
-
 }
 
 .nav__center{
@@ -272,9 +271,9 @@ Navbar
 }
 
 .logo{
-    font-size:1.2rem;
+    /* font-size: clamp(1rem, 4vw, 2rem); */
      font-family: "Ephesis", cursive;
-    color:var(--clr-brown-8);
+     color:#701727;
     font-weight: 700;
 }
 
@@ -297,14 +296,25 @@ Navbar
    color: white;
 }
 
+@media (max-width: 768px){
+    .logo{
+    font-size:1.5rem;
+}
+}
+
 @media (min-width: 768px){
   .nav{
     background: var(--clr-lightgrey-1);
     
   }
+.nav__center{
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+}
 
   .logo{
-    font-size: 1.5rem;
+    font-size: 2rem;
 
 }
 
@@ -313,14 +323,14 @@ Navbar
   }
 
   .nav__links{
-    /* background: red; */
+  
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-items: center;
     -moz-column-gap: 2rem;
          column-gap: 2rem;
     /* justify-content:space-between; */
-   /* justify-self: end; */
+   justify-self: end;
  
   }
 
@@ -338,11 +348,7 @@ Navbar
   .nav__link{
     color: hsl(185, 98%, 18%)
   }
-.nav__center{
-  display: grid;
-  grid-template-columns: auto 1fr;
-  align-items: center;
-}
+
 
 .sidebar{
   display: none;
